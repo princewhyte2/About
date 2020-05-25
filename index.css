@@ -1,11 +1,28 @@
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) {
+
 * {
     box-sizing: border-box;
     margin: 0;
 }
+
+.rotate {
+  animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
 body {
     background-image: url("back.jpg");
     font-family: "Montserrat",  sans-serif;
-    opacity: 0.7px;
 }
 
 li a {
@@ -19,7 +36,7 @@ nav ul li:hover {
 
 
 nav ul li{
-    list-style-type: disc;
+    list-style-type: none;
     color: white;
     padding: 10px;
     font-weight: bolder;
@@ -113,5 +130,127 @@ section h1 {
   .fa-instagram {
     background: #125688;
     color: white;
+  } 
+}
+
+ @media(max-width: 1024px) {
+   *{
+     box-sizing: border-box;
+     margin: 0px;
+   } 
+body {
+  background-color:white;
+  font-family: "Montserrat",  sans-serif;
+}
+
+li a {
+text-decoration: none;
+color:white;
+}
+
+nav ul li:hover {
+background-color: yellow;
+}
+
+nav {
+  text-align: center;
+  margin-left: 0px;
+  position: fixed;
+  margin-top: 0px;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color:#4267B2;
+  z-index: 1;
+ 
+}
+ nav ul {
+   padding: 0px;
+ }
+ 
+nav ul li{
+  list-style-type: none;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  font-size: large;
+  display: block;
+  background-color: #4267B2;
+  margin-left:10px;
+  float: left;
+  text-align: center;
+}
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+section {
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+section h1 {
+  color: black;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: 22px;
+  text-align: center;
+}
+.fa {
+  padding: 10px;
+  font-size: 15px;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-github {
+  background: black;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-whatsapp {
+  background: green;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.rotate {
+  animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
   }
-  
+  to {
+    transform: rotate(359deg);
+  }
+}
+}
